@@ -17,7 +17,7 @@ import java.util.List;
 public class FileServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        //1.获取输入流解析器工厂
+        //1.获取输入流解析器工厂.....
         DiskFileItemFactory factory = new DiskFileItemFactory();
         //2.通过工厂获得输入流解析器
         ServletFileUpload fileUpload = new ServletFileUpload(factory);
